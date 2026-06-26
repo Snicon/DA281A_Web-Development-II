@@ -17,6 +17,15 @@ To be uploaded.
 ##### URL
 To be uploaded.
 
+### Assignment 2 - More basics of JavaScript
+This assignment consits of 10 different tasks. It covers more about arrays and introduces functions along with objects.
+
+#### Image
+To be uploaded.
+
+##### URL
+To be uploaded.
+
 ## Progress & grades
 Grading scale for the course and all assignments is UG (Pass/Fail).
 
