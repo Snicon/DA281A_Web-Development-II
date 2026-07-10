@@ -1,0 +1,48 @@
+<!-- Sixten Peterson - aq9300 -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Assignment 4</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <div class="assignment-header">
+                    <span class="badge"><strong>Web Development II - Client</strong>, DA281A</span>
+                    <h1 >Assignment 4</h1>
+                </div>
+
+                <div class="search-box">
+                    <h2>Search for a movie</h2>
+
+                    <!-- Sökformulär -->
+                    <form action="" method="get" id="search-form">
+                        <div class="field">
+                            <label for="query">Movie title</label>
+                            <div class="input-container">
+                                <input type="text" name="query" id="query">
+                                <button type="button" id="clear-button" class="clear-button" aria-label="Clear search">&#10007</button> <!-- Knapp för att nollställa/ta bort sökning-->
+                            </div>
+                        </div>
+                        <button class="submit-button" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <div>
+                    <!-- Resultat placeras här -->
+                    <ol id="result"></ol>
+                </div>
+            </main>
+        </div>
+        <!-- En enkel footer -->
+        <footer>
+            <p>
+                This website is created by <a href="https://snicon.rip">Sixten Peterson</a> for the course <a href="https://mau.se/sok-utbildning/kurser/DA281A">DA281A</a> at
+                <a href="https://mau.se/en">Malmö University</a>. Source code is available on <a href="https://github.com/Snicon/DA281A_Web-Development-II">GitHub</a>.
+            </p>
+        </footer>
+        <script src="main.js"></script> <!-- Själva JavaScripten-->
+    </body>
+</html>
