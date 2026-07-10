@@ -1,0 +1,186 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffbeb;
+}
+
+
+/* CSS given av uppgiftsbeskrivningen för deluppgift 1 */
+#message-box {
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 0.5rem;
+}
+.success {
+    background-color: #dff0d8;
+    border-color: #98B98B;
+}
+.error {
+    background-color: #f2dede;
+    border-color: #BE9090;
+}
+.info {
+    background-color: #d9edf7;
+    border-color: #7294A5;
+}
+
+
+/* Text-relaterat */
+.badge {
+    background-color: #ff6467;
+    color: #262626;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+h1, h2, h3, h4, h5, h6, legend {
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0.75rem 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    margin-top: 5rem;
+}
+
+/* Container-relaterat */
+.container {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+.button-container {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Knapp-relaterat */
+button {
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #7294A5;
+    color: black;
+}
+
+button#success {
+    background-color: #dff0d8;
+}
+
+button#success:hover {
+    background-color: #98B98B;
+    color: black;
+    cursor: pointer;
+}
+
+button#error {
+    background-color: #f2dede;
+    color: black;
+}
+
+button#error:hover {
+    background-color: #BE9090;
+    color: black;
+    cursor: pointer;
+}
+
+button#info {
+    background-color: #d9edf7;
+}
+
+button#info:hover {
+    background-color: #7294A5;
+    color: black;
+    cursor: pointer;
+}
+
+.remove-list-item {
+    padding: 0.5rem 0.75rem;
+    background-color: #ff6467;
+}
+
+.remove-list-item:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* List-relaterat */
+ul {
+    text-align: left;
+}
+
+ul#items li div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.list-button li div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Formulär-relaterat */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.form-container label {
+    font-family: sans-serif;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.group-radio {
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+div#pets p {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* Footer-relaterat */
+footer {
+    margin-top: 6rem;
+    border-top: 1px black solid;
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="se">
+    <head>
+        <title>Inlämningsuppgift 3</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="container">
+            <span class="badge"><strong>Webbutveckling II - Klient</strong>, DA281A</span>
+            <h1>Inlämningsuppgift 3</h1>
+
+            <!-- Uppgift 1: Ändra färg på ett element med hjälp av css-klasser och javascript -->
+            <section id="uppgift_1"> <!-- Sektionerar upp innehållet för vardera deluppgift med sections. -->
+                <h2>Uppgift 1</h2> <!-- Rubrik för deluppgiften -->
+                <div id="message-box">
+                    <p lang="en">This is a very important message box!</p> <!-- Eftersom språket skiljer sig från det som står specificerat i html-elementets lang-attribut definierar jag det direkt i elementet, detta görs för fler element längre ner i koden. -->
+                </div>
+
+
+                <div class="button-container"> <!-- Placerade knapparna i en div för att kunna nyttja flexbox för positionering. -->
+                    <button type="button" id="success" lang="en">Success</button>
+                    <button type="button" id="error" lang="en">Error</button>
+                    <button type="button" id="info" lang="en">Info</button>
+                </div>
+            </section>
+
+            <!-- Uppgift 2+3: Lägga till element (+radera det sista elementet i ul-elementet) till listan i DOM med hjälp av JS -->
+            <section id="uppgift_2-3">
+                <h2>Uppgift 2 + 3</h2>
+                <ul id="items">
+                    <li lang="en">The first item is free!</li>
+                </ul>
+
+                <div class="button-container"> <!-- Placerade knapparna i en div för att kunna nyttja flexbox för positionering. -->
+                    <button type="button" id="add-item" lang="en">Add item</button>
+                    <button type="button" id="remove-item" lang="en">Remove (last) item</button>
+                </div>
+            </section>
+
+            <!-- Uppgift 4: Radera en specifik li från en lista med hjälp av en raderingsknapp och confirm()-funktionen -->
+            <section id="uppgift_4">
+                <h2>Uppgift 4</h2>
+                <div class="flex-center"> <!-- Centrerar med flexbox -->
+                    <ul class="list-button"> <!-- Mindre justering av stilen och HTML-koden av estetiska skäl. Funktionen är densamma. -->
+                        <li>
+                            <div>
+                                <p lang="en">This is the first item</p>
+                                <button type="button" class="remove-list-item">X</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p lang="en">This is the second item</p>
+                                <button type="button" class="remove-list-item">X</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p lang="en">This is the third item</p>
+                                <button type="button" class="remove-list-item">X</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p lang="en">This is the fourth item</p>
+                                <button type="button" class="remove-list-item">X</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Uppgift 5: JavaScript och formulär (skriver ut i konsol och validerar) -->
+            <section id="uppgift_5">
+                <h2>Uppgift 5</h2>
+                <form action="" method="get" id="apply-for-pet">
+                    <fieldset> <!-- Jag valde att även lägga till ett fieldset och en legend för att göra det lite finare. -->
+                        <legend>
+                            Ansökan om att skaffa husdjur
+                        </legend>
+
+                        <div class="form-container">
+                            <div class="form-group">
+                                <label for="firstname">
+                                    Förnamn
+                                </label>
+                                <input type="text" id="firstname" name="firstname">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastname">
+                                    Efternamn
+                                </label>
+                                <input type="text" id="lastname" name="lastname">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">
+                                    Ålder
+                                </label>
+                                <input type="text" id="age" name="age">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    E-post
+                                </label>
+                                <input type="text" id="email" name="email">
+                            </div>
+
+                            <div id="pets">
+                                <p>Typ av husdjur?</p>
+
+                                <div class="form-group group-radio">
+                                    <input type="radio" name="pet" id="dog" value="dog">
+                                    <label for="dog">Hund</label>
+                                </div>
+
+                                <div class="form-group group-radio">
+                                    <input type="radio" name="pet" id="cat" value="cat">
+                                    <label for="cat">Katt</label>
+                                </div>
+
+                                <div class="form-group group-radio">
+                                    <input type="radio" name="pet" id="fish" value="fish">
+                                    <label for="fish">Fisk</label>
+                                </div>
+
+                                <div class="form-group group-radio">
+                                    <input type="radio" name="pet" id="bird" value="bird">
+                                    <label for="bird">Fågel</label>
+                                </div>
+                            </div>
+
+                            <button type="submit">Skicka ansökan</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer> <!-- Traditionsenlig footer, som i resten av uppgifterna. -->
+            <p>
+                Hemsidan är skapad av <a href="https://snicon.rip">Sixten Peterson</a> för kursen <a href="https://mau.se/sok-utbildning/kurser/DA281A">DA281A</a> på
+                <a href="https://mau.se/">Malmö Universitet</a>. Källkoden finns tillgänglig på <a href="https://github.com/Snicon/DA281A_Web-Development-II">Github</a>.
+            </p>
+        </footer>
+
+        <script src="main.js"></script> <!-- JavaScript-koden för webbsidan -->
+    </body>
+</html>
