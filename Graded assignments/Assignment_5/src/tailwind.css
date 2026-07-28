@@ -1,0 +1,9 @@
+/* Sixten Peterson - aq9300 */
+/* Extremt enkel CSS-fil för TailwindCSS: https://tailwindcss.com/docs/installation/using-vite (se steg 4)
+   Samt följande för @apply: https://tailwindcss.com/docs/functions-and-directives#apply-directive
+ */
+@import "tailwindcss";
+
+body {
+    @apply bg-zinc-900; /* Sätter en mörk bakgrundsfärg */
+}

@@ -1,0 +1,13 @@
+/* Sixten Peterson - aq9300 */
+// Väldigt enkel Vite config, lägger in react och tailwindcss plugins. Se dokumentation: https://vite.dev/config/
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+      react(),
+      tailwindcss(),
+  ],
+})
