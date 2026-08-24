@@ -89,7 +89,7 @@ Grading scale for the course and all assignments is UG (Pass/Fail).
 
 | Assignment        | Handed in | Grade      | Best possible grade |
 |-------------------|-----------|------------|---------------------|
-| Assignment 1      | &#9744;   | -          | G (Pass)            |
+| Assignment 1      | &#9745;   | -          | G (Pass)            |
 | Assignment 2      | &#9744;   | -          | G (Pass)            |
 | Assignment 3      | &#9744;   | -          | G (Pass)            |
 | Assignment 4      | &#9744;   | -          | G (Pass)            |
