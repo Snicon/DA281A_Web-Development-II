@@ -23,6 +23,10 @@ const min = (num1, num2) => {
     }
 };
 
+// Testar funktionerna genom att skriva ut de returnerade värderna från funktionerna i konsolen
+console.log(max(5, 12));
+console.log(min(5, 12));
+
 /**
  * Uppgift 2
  * =========
@@ -65,7 +69,7 @@ const sum = (arr) => {
 };
 
 // Testar funktionen i enlighet med uppgiftsbeskrivningen.
-const numbers = [5, 10, 15, 20, 25];
+const numbers = [5, 10, 15, 20, 25] ;
 const sumOfNumbers = sum(numbers);
 console.log(sumOfNumbers);
 
